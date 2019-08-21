@@ -1,0 +1,36 @@
+{
+  "author": "Kaive Young <kaive@woody.vip>",
+  "description": "巫云工业采集网关文档",
+  "extension": null,
+  "generator": "site",
+  "links": {
+    "sharing": {
+      "all": null,
+      "facebook": null,
+      "google": null,
+      "twitter": null,
+      "weibo": null
+    },
+    "sidebar": {
+      "巫迪官网": "https://www.woody.vip",
+      "巫云网关管理平台": "https://custom.woody.vip"
+    }
+  },
+  "output": null,
+  "pdf": {
+    "fontSize": 12,
+    "footerTemplate": null,
+    "headerTemplate": null,
+    "margin": {
+      "bottom": 36,
+      "left": 62,
+      "right": 62,
+      "top": 36
+    },
+    "pageNumbers": false,
+    "paperSize": "a4"
+  },
+  "plugins": [],
+  "title": "巫云工业采集网关文档",
+  "variables": {}
+}
