@@ -23,3 +23,5 @@
 * [API接口](api/README.md)
     * [HTTP接口](api/http.md)
     * [MQTT接口](api/mqtt.md)
+    
+* [常见问题](faq.md)
