@@ -30,7 +30,9 @@
     "pageNumbers": false,
     "paperSize": "a4"
   },
-  "plugins": [],
+  "plugins": [
+    "theme-comscore"
+  ],
   "title": "巫云工业采集网关文档",
   "variables": {}
 }
