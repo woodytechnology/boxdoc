@@ -92,7 +92,7 @@ end
 
 ```lua
 function calc(value)
-    if(value.cnc_runstatus==1 &&#value.cnc_alarm>0)
+    if(value.cnc_runstatus==1 and #value.cnc_alarm>0)
     then
         value.custom=2
     end
