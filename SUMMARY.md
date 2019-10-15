@@ -24,4 +24,5 @@
     * [3.1.HTTP接口](api/http.md)
     * [3.2.MQTT接口](api/mqtt.md)
 * [4.边缘计算](calc.md)
-* [5.常见问题](faq.md)
+* [5.数据字典](dict.md)
+* [6.常见问题](faq.md)
