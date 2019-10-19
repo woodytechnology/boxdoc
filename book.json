@@ -1,18 +1,20 @@
 {
   "author": "Kaive Young <kaive@woody.vip>",
-  "title": "工业采集网关文档",
-  "description": "工业采集网关文档",
+  "title": "巫云工业采集网关文档",
+  "description": "巫云工业采集网关文档",
   "extension": null,
   "generator": "site",
   "links": {
     "facebook": false,
     "weibo": true,
     "sidebar": {
+      "巫迪官网": "https://www.woody.vip",
+      "巫云网关管理平台": "https://custom.woody.vip"
     }
   },
   "output": null,
   "pdf": {
-    "fontSize": 14,
+    "fontSize": 12,
     "footerTemplate": null,
     "headerTemplate": null,
     "margin": {
@@ -25,7 +27,17 @@
     "paperSize": "a4"
   },
   "plugins": [
-    "theme-comscore"
+    "theme-comscore",
+    "github",
+    "toggle-chapters",
+    "disqus"
   ],
-  "variables": {}
-}
+  "variables": {},
+  "pluginsConfig":{
+    "github": {
+      "url": "https://github.com/woodytechnology"
+    },
+    "disqus": {
+      "shortName": "iotbox-document"
+    }
+  }}
