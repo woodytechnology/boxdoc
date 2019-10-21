@@ -1,6 +1,6 @@
 # Summary
 
-* [前言](README.md)
+* [前言](Index.md)
 
 * [1.硬件介绍](hardware.md)
 
