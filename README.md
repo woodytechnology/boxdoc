@@ -36,7 +36,7 @@ gitbook install
 gitbook serve
 ```
 
-6. 编译文档,文档输出在*_book/*文件夹下
+6. 编译文档,文档输出在 *_book/* 文件夹下
 
  ``` shell
 gitbook build
