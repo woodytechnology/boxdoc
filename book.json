@@ -34,7 +34,8 @@
     "theme-comscore",
     "github",
     "toggle-chapters",
-    "disqus"
+    "disqus",
+    "sitemap-general"
   ],
   "variables": {},
   "pluginsConfig":{
@@ -43,5 +44,8 @@
     },
     "disqus": {
       "shortName": "iotbox-document"
+    },
+    "sitemap-general": {
+      "prefix": "https://boxdoc.wuyun.pro"
     }
   }}
