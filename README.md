@@ -41,3 +41,5 @@ gitbook serve
  ``` shell
 gitbook build
 ```
+
+7. 使用,部署在任意静态文件服务器即可提供web文档,或直接使用浏览器打开html文件(可能会有部分功能缺失)
