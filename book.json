@@ -4,6 +4,10 @@
   "description": "巫云工业采集网关文档",
   "extension": null,
   "generator": "site",
+  "structure": {
+    "readme": "Index.md",
+    "summary": "SUMMARY.md"
+  },
   "links": {
     "facebook": false,
     "weibo": true,
