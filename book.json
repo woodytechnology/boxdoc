@@ -34,16 +34,12 @@
     "theme-comscore",
     "github",
     "toggle-chapters",
-    "disqus",
     "sitemap-general"
   ],
   "variables": {},
   "pluginsConfig":{
     "github": {
       "url": "https://github.com/woodytechnology/boxdoc"
-    },
-    "disqus": {
-      "shortName": "iotbox-document"
     },
     "sitemap-general": {
       "prefix": "https://boxdoc.wuyun.pro"
