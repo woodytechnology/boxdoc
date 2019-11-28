@@ -110,7 +110,7 @@ function calc(value)
 end
 ```
 
-### 将Alarm的Array(Object) 展开成普通变量
+### 将Alarm的Array[Object]展开成普通变量
 
 ```json
 {
@@ -152,7 +152,7 @@ end
 ```
 
 
-### 将坐标的Array(Object) 展开成普通变量
+### 将坐标的Array[Object]展开成普通变量
 
 ```json
 {
