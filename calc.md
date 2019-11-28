@@ -112,6 +112,33 @@ end
 
 ### 将Alarm的Array(Object) 展开成普通变量
 
+```json
+{
+  "cnc_alarm": [
+    {
+      "alarm_no": 1,
+      "alarm_type": "T01",
+      "alarm_msg": "待机中"
+    },
+    {
+      "alarm_no": 204,
+      "alarm_type": "XXX",
+      "alarm_msg": "急停"
+    }
+  ]
+}
+```
+转换成
+```json
+{
+  "cnc_alarm_1_msg": "待机中",
+  "cnc_alarm_1_no": 1,
+  "cnc_alarm_1_type": "T01",
+  "cnc_alarm_2_msg": "急停",
+  "cnc_alarm_2_no": 204,
+  "cnc_alarm_2_type": "XXX"
+}
+```
 ```lua
 function calc(value)
     for i, v in ipairs(value.cnc_alarm) do
@@ -120,6 +147,46 @@ function calc(value)
         value['cnc_alarm_' .. i .. '_type'] = v.alarm_type
     end
     value.cnc_alarm = nil
+    return value
+end
+```
+
+
+### 将坐标的Array(Object) 展开成普通变量
+
+```json
+{
+  "cnc_mecpos": [
+    {
+      "axis": "X",
+      "value": -84.4
+    },
+    {
+      "axis": "Y",
+      "value": 2.986
+    },
+    {
+      "axis": "Z",
+      "value": -108.181
+    }
+  ]
+}
+```
+转换成
+```json
+{
+  "cnc_mecpos_X": -84.4,
+  "cnc_mecpos_Y": 2.986,
+  "cnc_mecpos_Z": -108.181
+}
+```
+
+```lua
+function calc(value)
+    for i, v in ipairs(value.cnc_mecpos) do
+        value['cnc_mecpos_'..v.axis]=v.value
+    end
+    value.cnc_mecpos=nil
     return value
 end
 ```
