@@ -109,3 +109,17 @@ function calc(value)
     return value
 end
 ```
+
+### 将Alarm的Array(Object) 展开成普通变量
+
+```lua
+function calc(value)
+    for i, v in ipairs(value.cnc_alarm) do
+        value['cnc_alarm_' .. i .. '_msg'] = v.alarm_msg
+        value['cnc_alarm_' .. i .. '_no'] = v.alarm_no
+        value['cnc_alarm_' .. i .. '_type'] = v.alarm_type
+    end
+    value.cnc_alarm = nil
+    return value
+end
+```
