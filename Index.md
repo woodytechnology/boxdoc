@@ -7,7 +7,7 @@
 ## 网关介绍
 
 本网关为工业物联网采集网关,专业采集各种主流 CNC, PLC, 目前支持 Fanuc (发那科), Siemens (西门子) CNC, Mitsubishi (三菱) CNC, 
-KND (凯恩蒂), Heidenhain (海德汉), Siemens (西门子) S7, Mitsubishi (三菱) MC, Modbus TCP/RTU 等协议.
+KND (凯恩蒂), GSK (凯恩帝) CNC, Heidenhain (海德汉), Siemens (西门子) S7, Mitsubishi (三菱) MC, Modbus TCP/RTU 等协议.
 
 本网关程序使用 C++ 开发, 支持 ARM, X86 等各种CPU架构的Linux系统,可构建至中央服务器统一采集厂房所有联网设备,也可以构建于嵌入式主机,
 一对一采集单个设备,网关对外提供多种数据输出方式,包括 MQTT , HTTP, Socket 等通讯协议,支持对接各大云平台,包括 Thingsboard, 联通 Telit, 
