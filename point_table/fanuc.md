@@ -7,7 +7,7 @@
 
 | 点位名称 | 点位地址 | 描述 | 数据类型 |
 | -- | -- | -- | -- | -- |
-| 加工零件数 | cnc_products | cnc生产件数 | Number |
+| 加工零件数 | cnc_products | cnc生产件数 | Number |Do
 | CNC的IP地址 | cnc_ip | CNC的IP地址 | String |
 | 开机时间 | cnc_alivetime | 数控系统工作时间 秒 | Number |
 | 运行时间 | cnc_runtime | 加工程序运行总时间 秒| Number |
