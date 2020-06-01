@@ -32,4 +32,5 @@
     * [7.2.Mitsubishi](point_table/mitsubishi.md)
     * [7.3.Siemens](point_table/siemens.md)
     * [7.4.KND](point_table/knd.md)
-* [8.常见问题](faq.md)
+* [8.支持型号](supported.md)
+* [9.常见问题](faq.md)
