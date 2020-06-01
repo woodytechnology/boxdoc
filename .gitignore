@@ -13,3 +13,4 @@ package-lock.json
 *.njsproj
 *.sln
 *.iml
+/depoly.sh
