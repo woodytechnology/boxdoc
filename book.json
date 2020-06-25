@@ -4,9 +4,13 @@
   "description": "巫云工业采集网关文档",
   "extension": null,
   "generator": "site",
+  "language" : "zh-hans",
   "structure": {
     "readme": "Index.md",
     "summary": "SUMMARY.md"
+  },
+  "theme-default": {
+    "showLevel": true
   },
   "links": {
     "facebook": false,
@@ -20,7 +24,7 @@
   "pdf": {
     "fontSize": 12,
     "footerTemplate": null,
-    "headerTemplate": null,
+    "headerTemplate": "_TITLE_,_AUTHOR_",
     "margin": {
       "bottom": 36,
       "left": 62,
@@ -34,10 +38,16 @@
     "theme-comscore",
     "github",
     "toggle-chapters",
-    "sitemap-general"
+    "sitemap-general",
+    "-lunr",
+    "-search",
+    "search-pro"
   ],
   "variables": {},
   "pluginsConfig":{
+    "theme-default": {
+      "showLevel": true
+    },
     "github": {
       "url": "https://github.com/woodytechnology/boxdoc"
     },
