@@ -292,7 +292,7 @@ def on_message(mqtt_client, userdata, msg):
 mqtt_client = mqtt.Client()
 mqtt_client.on_connect = on_connect
 mqtt_client.on_message = on_message
-mqtt_client.connect('wuyun.pro', 1883, 60)
+mqtt_client.connect('127.0.0.1', 1883, 60)
 
 if __name__ == '__main__':
     mqtt_client.loop_forever()
