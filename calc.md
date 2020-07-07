@@ -68,6 +68,35 @@ end
 ![](/img/calc-4.png)
 
 
+## 内置方法
+
+```lua
+push_message(msg,topic)
+通过现有mqtt配置推送消息
+msg: 消息
+topic:可选,默认为数据topic
+
+
+set_key(key,value,persistant)
+写入缓存变量
+key: 变量名
+value: 值
+persistant: 是否持久化,0存入redis,1存入sqlite
+
+
+del_key(key,persistant)
+删除缓存变量
+key: 变量名
+persistant: 是否持久化,0存入redis,1存入sqlite
+
+get_key(key,persistant)
+获取缓存变量
+key: 变量名
+persistant: 是否持久化,0存入redis,1存入sqlite
+return: 变量的值
+```
+
+
 ## 示例
 
 ### 将某个变量结果+1

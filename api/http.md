@@ -342,3 +342,34 @@
 - 404 未找到资源
 
 
+
+### 操作设备临时变量
+#### 请求
+
+- Method: **PUT**
+- URL: ```/device/{device_id}/temp_value```
+- Headers： Content-Type:application/json
+- Body:
+```json
+[
+    {
+        "key": "M100",
+        "action": "get",
+        "value": 111,
+        "per": 1
+    }
+]
+```
+* key是变量名称
+* action是操作方式,get,set,delete
+* value要写入的值,get,delete方法忽略
+* per指定要写入的区域,0 redis,1 sqlite  redis变量重启失效,sqlite位持久保存
+
+#### 返回
+- 204 OK
+- 400 请求参数错误
+- 409 失败
+- 404 未找到资源
+
+
+
