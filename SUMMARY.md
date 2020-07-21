@@ -32,6 +32,7 @@
     * [Mitsubishi](point_table/mitsubishi.md)
     * [Siemens](point_table/siemens.md)
     * [KND](point_table/knd.md)
+    * [Brother](point_table/brother.md)
 * [Modbus Server](modbus.md)    
 * [支持型号](supported.md)
 * [常见问题](faq.md)
