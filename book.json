@@ -14,10 +14,10 @@
   },
   "links": {
     "facebook": false,
-    "weibo": true,
+    "weibo": false,
     "sidebar": {
       "巫迪官网": "https://www.woody.vip",
-      "巫云网关管理平台": "https://custom.woody.vip"
+      "巫云网关管理平台": "https://www.woody.vip/custom"
     }
   },
   "output": null,
@@ -52,6 +52,6 @@
       "url": "https://github.com/woodytechnology/boxdoc"
     },
     "sitemap-general": {
-      "prefix": "https://boxdoc.wuyun.pro"
+      "prefix": "https://www.woody.vip/boxdoc/"
     }
   }}
