@@ -1,7 +1,7 @@
 # 支持CNC型号列表
 
 ## 发那科(Fanuc)
-
+支持发那科全系列,包括并不限于下列型号
 ```
 FANUC Series 0i-MODEL A
 FANUC Series 0i-MODEL B
@@ -94,16 +94,13 @@ Hass CNC由于官方接口限制,只支持官方定义固定功能的宏程序�
 ## 海德汉(Heidenhain)
 ```
 Heidenhain 530
+Heidenhain 620
 Heidenhain 640
 ```
 
 
-## 力士乐(Boschrexroth)-测试阶段
-```
-支持自带网口全系列力士乐CNC
-```
 
-## 兄弟(Brother)-测试阶段
+## 兄弟(Brother)
 ```
 支持自带网口全系列Brother CNC
 ```
@@ -118,7 +115,17 @@ GSK 980tdc
 GSK 25i
 ```
 
+## 新代(Syntec)
+支持V2及以上版本
+```
+10.116.10以前的版本不支持
+V2 10.116.10x ~ 10.116.24x
+V3 10.116.24x ~ 10.116.36
+V4 10.116.36x ~ 最新
+```
 -----------
+
+
 
 # 支持PLC型号列表
 
@@ -142,4 +149,14 @@ Mitsubishi Fx系列/Q系列/A系列
 Omron CH系列
 ```
 
+## 罗克韦尔(AB)
+```
+全系列
+```
 
+# ROBOT
+
+## 库卡(KUKA)
+```
+全系列
+```
