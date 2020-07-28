@@ -50,3 +50,63 @@
 | 设备PLC | plc1 | G0012 | Number |
 | 设备诊断 | dia1 | 4000 | Number/List[Object] |
 | 设备参数 | pamar1 | 6217 | Number/List[Object] |
+
+
+#### 数据字典
+
+###### cnc_mode
+
+``` json
+{
+    "Mdi":0,
+    "Memory":1, 
+    "None":2,
+    "Edit":3, 
+    "Handle":4,
+    "Jog":5, 
+    "TeachinJog":6,
+    "TeachinHandle":7,
+    "Incfeed":8,
+    "Reference":9,
+    "Remote":10,
+    "Other":11
+}
+```
+
+###### cnc_runstatus
+
+``` json
+{
+    "RESET":0,
+    "STOP":1, 
+    "HOLD":2,
+    "START":3, 
+    "MSTR":4,
+    "Other":5
+}
+```
+
+###### cnc_emer
+
+``` json
+{
+    "NotEmergency":0,
+    "Emergency":1, 
+    "Reset":2,
+    "Wait":3, 
+    "Others":4
+}
+```
+
+
+###### cnc_gcode
+
+``` json
+{
+    "G01":0,
+    "G02":1, 
+    "G03":2,
+    "G04":3, 
+    "Others":4
+}
+```

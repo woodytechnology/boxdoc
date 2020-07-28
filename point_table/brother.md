@@ -26,3 +26,31 @@
 | 当前所处操作模式 | cnc_mode | 操作面板操作模式对应的模式 | Enum |
 | 执行的NC主程序号 | cnc_mainproname | cnc当前加工执行的主程序号 | String |
 | CNC型号 | cnc_type | 说明机床类型 | String |
+
+
+#### 数据字典
+
+###### cnc_mode
+
+``` json
+{
+    "MANU":1, 
+    "MDI":1, 
+    "MEM":2,
+    "EDIT":3, 
+    "MANU+MDI":4,
+    "MEM+EDIT":5, 
+}
+```
+
+###### cnc_runstatus
+
+``` json
+{
+    "电源关闭":1,
+    "等待":2, 
+    "工作":3,
+    "停止":4, 
+    "错误":5,
+}
+```

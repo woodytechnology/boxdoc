@@ -40,3 +40,36 @@
 | 刀具X补偿 | cnc_toollengthx | 刀具X补偿 | Number |
 | 刀具Z补偿 | cnc_toollengthz | 刀具Z补偿 | Number |
 | 刀沿位置 | cnc_tooledg | 刀沿位置 | Number |
+
+
+
+#### 数据字典
+
+###### cnc_mode
+
+``` json
+{
+    "JOG": 0,
+    "TEACHIN":1, 
+    "MDA":2,
+    "AUTO":3, 
+    "REPOS":4,
+    "REFPOINT":5, 
+    "VAR":6,
+    "INC":7,
+    "OTHER":8
+}
+```
+
+###### cnc_runstatus
+
+``` json
+{
+    "RESET":0,
+    "STOP":1, 
+    "HOLD":2,
+    "START":3, 
+     "SPENDLE_CW_CCW":4,
+     "Others":5
+}
+```

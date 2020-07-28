@@ -165,3 +165,31 @@
      "Others":5
 }
 ```
+
+
+##### Brother
+
+###### cnc_mode
+
+``` json
+{
+    "MANU":1, 
+    "MDI":1, 
+    "MEM":2,
+    "EDIT":3, 
+    "MANU+MDI":4,
+    "MEM+EDIT":5, 
+}
+```
+
+###### cnc_runstatus
+
+``` json
+{
+    "电源关闭":1,
+    "等待":2, 
+    "工作":3,
+    "停止":4, 
+    "错误":5,
+}
+```
