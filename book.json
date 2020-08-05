@@ -41,7 +41,8 @@
     "sitemap-general",
     "-lunr",
     "-search",
-    "search-pro"
+    "search-pro",
+    "baidu-v3"
   ],
   "variables": {},
   "pluginsConfig":{
@@ -53,5 +54,8 @@
     },
     "sitemap-general": {
       "prefix": "https://www.woody.vip/boxdoc/"
+    },
+    "baidu": {
+      "token": "8e39f87391e332e502940e72cdaacb1f"
     }
   }}
