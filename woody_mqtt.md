@@ -293,3 +293,86 @@ mqtt_client.connect('127.0.0.1', 1883, 60)
 if __name__ == '__main__':
     mqtt_client.loop_forever()
 ```
+
+### Golang
+
+```golang
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	mqtt "github.com/eclipse/paho.mqtt.golang"
+	uuid "github.com/satori/go.uuid"
+	"time"
+)
+
+type Alarm struct {
+	AlarmType string `json:"alarm_type,omitempty"`
+	AlarmMsg  string `json:"alarm_msg,omitempty"`
+	AlarmNo   int64  `json:"alarm_no,omitempty"`
+}
+type Position struct {
+	Axis  string  `json:"axis,omitempty"`
+	Value float64 `json:"value,omitempty"`
+}
+type Value struct {
+	Name  string      `json:"name,omitempty"`
+	Value interface{} `json:"value,omitempty"`
+}
+type Root struct {
+	DeviceId   string  `json:"device_id,omitempty"`
+	DeviceType string  `json:"device_type,omitempty"`
+	Ts         int64   `json:"ts,omitempty"`
+	Values     []Value `json:"values,omitempty"`
+}
+
+func reciveHandler(client mqtt.Client, m mqtt.Message) {
+	var messages []Root
+	_ = json.Unmarshal(m.Payload(), &messages)
+	for _, message := range messages {
+		fmt.Println(message.DeviceId)
+		for _, value := range message.Values {
+			fmt.Print(value.Name + "\t")
+			switch value.Value.(type) {
+			case []interface{}:
+				if value.Name == "cnc_alarm" {
+					_alarm, _ := json.Marshal(value.Value)
+					var alarms []Alarm
+					_ = json.Unmarshal(_alarm, &alarms)
+					for _, alarm := range alarms {
+						fmt.Printf("\nalarm_no:%d\talarm_type:%s\talarm_msg:%s", alarm.AlarmNo, alarm.AlarmType, alarm.AlarmMsg)
+					}
+				} else {
+					_position, _ := json.Marshal(value.Value)
+					var position []Position
+					_ = json.Unmarshal(_position, &position)
+					for _, axis := range position {
+						fmt.Printf("%s:%f\t", axis.Axis, axis.Value)
+					}
+				}
+			default:
+				fmt.Print(value.Value)
+			}
+			fmt.Println()
+		}
+	}
+}
+func main() {
+	topic := "data/+/v1"
+	address := "tcp://wuyun.pro:1883"
+	u1, _ := uuid.NewV4()
+	opts := mqtt.NewClientOptions().AddBroker(address).SetClientID(u1.String())
+	c := mqtt.NewClient(opts)
+	if token := c.Connect(); token.Wait() && token.Error() != nil {
+		panic(token.Error())
+	}
+	if token := c.Subscribe(topic, 0, reciveHandler); token.Wait() && token.Error() != nil {
+		fmt.Println(token.Error())
+	}
+	for {
+		time.Sleep(1 * 1000 * 1000)
+	}
+}
+
+```
