@@ -2,7 +2,8 @@
 
 网关可以设置通过Modbus输出采集到的数据
 
-modbus tcp的地址为网关地址,端口为502
+如下图,打开网关控制界面,在Modbus服务配置里输入端口(不填默认502)并启用,即可开启Modbus功能
+![ModbusServer](/img/vpn-7.png)
 
 
 ### 操作方法
