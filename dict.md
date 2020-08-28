@@ -173,7 +173,7 @@
 
 ``` json
 {
-    "MANU":1, 
+    "MANU":0, 
     "MDI":1, 
     "MEM":2,
     "EDIT":3, 
