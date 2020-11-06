@@ -1,4 +1,4 @@
-# 设备控制
+# 功能设置
 
 起停一些网关扩展功能
 包括
@@ -6,4 +6,4 @@
 * Modbus服务 将网关的数据以ModbusTcp输出
 * OPC UA服务 将网关数据以OPC UA方式输出
 
-![](/img/control.png)
+![](/img/function_set-1.png)
