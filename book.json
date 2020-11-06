@@ -42,7 +42,9 @@
     "-lunr",
     "-search",
     "search-pro",
-    "baidu-v3"
+    "baidu-v3",
+    "flexible-alerts",
+    "new-flowchart"
   ],
   "variables": {},
   "pluginsConfig":{
@@ -57,5 +59,19 @@
     },
     "baidu": {
       "token": "8e39f87391e332e502940e72cdaacb1f"
+    },
+    "flexible-alerts": {
+      "note": {
+        "label": "笔记"
+      },
+      "tip": {
+        "label": "提示"
+      },
+      "warning": {
+        "label": "警告"
+      },
+      "danger": {
+        "label": "注意"
+      }
     }
   }}

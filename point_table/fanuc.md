@@ -40,6 +40,8 @@
 | 加工状态 | cnc_gcode | 判断G0/G1或其他G代码加工状态或加工坐标系 | String |
 | 当前所处运行模式 | cnc_runstatus | 当前设备运行状态 | Enum |
 | 程序列表 | cnc_programlist | 程序列表 | List[Object]  |
+| 最大通道 | cnc_maxpath | 多通道设备最大通道数 | Number |
+| 当前通道 | cnc_currentpath | 多通道设备当前通道 | Nubmer|
 | 报警 | cnc_alarm | 报警 | List[Object] |
 
 #### 添加点位
@@ -94,19 +96,6 @@
     "Emergency":1, 
     "Reset":2,
     "Wait":3, 
-    "Others":4
-}
-```
-
-
-###### cnc_gcode
-
-``` json
-{
-    "G01":0,
-    "G02":1, 
-    "G03":2,
-    "G04":3, 
     "Others":4
 }
 ```
