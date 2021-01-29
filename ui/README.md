@@ -15,11 +15,11 @@
 ```flow
 st=>start: 开始
 e=>end: 结束
-op1=>operation: 设置机床网络:>https://www.woody.vip/posts[blank]
-op2=>operation: 设置网关网络:>https://www.woody.vip/boxdoc/ui/network.html[blank]
-c1=>condition: Ping测试/端口测试:>https://www.woody.vip/boxdoc/ui/debug/tools.html[blank]
-op3=>operation: 配置采集:>https://www.woody.vip/boxdoc/ui/collector.html[blank]
-op4=>operation: 配置网关推送:>https://www.woody.vip/boxdoc/ui/gateway/publisher.html[blank]
+op1=>operation: 设置机床网络
+op2=>operation: 设置网关网络
+c1=>condition: Ping测试/端口测试
+op3=>operation: 配置采集
+op4=>operation: 配置网关推送:
 st->op1->op2(right)->c1
 c1(no)->op1
 c1(yes)->op3->op4->e

@@ -20,7 +20,7 @@
         * [修改密码](ui/system/password.md)
         * [授权设置](ui/system/lisence.md)
         * [VPN](ui/../vpn.md)    
-* [巫迪MQTT](woody_mqtt.md)    
+* [Cosmoplat](cosmoplat.md)    
 * [API接口](api/README.md)
     * [HTTP接口](api/http.md)
     * [MQTT接口](api/mqtt.md)
