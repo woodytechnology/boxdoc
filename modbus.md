@@ -3,14 +3,14 @@
 网关可以设置通过Modbus输出采集到的数据
 
 如下图,打开网关控制界面,在Modbus服务配置里输入端口(不填默认502)并启用,即可开启Modbus功能
-![ModbusServer](/img/vpn-7.png)
+![ModbusServer](/img/modbus-1.png)
 
 
 ### 操作方法
-![ModbusServer](/img/mqtt-server.png)
+![ModbusServer](/img/modbus-2.png)
 
 
-1. 勾选需要输出到Modbus的变量
+1. 点击需要输出到Modbus的变量
 2. 如果变量类型为空,需要手动调整变量类型
 3. 点击保存生成Modbus地址
 4. 可以导出为点位表
