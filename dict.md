@@ -4,7 +4,7 @@
 
 ###### device_state
 
-``` json
+```json
 {
     "Online":0,
     "Offline":1
@@ -13,7 +13,7 @@
 
 ###### valuetype
 
-``` json
+```json
 {
     "Int16": 1,
     "Float": 2,
@@ -31,7 +31,7 @@
 
 ###### cnc_mode
 
-``` json
+```json
 {
     "Mdi":0,
     "Memory":1, 
@@ -50,7 +50,7 @@
 
 ###### cnc_runstatus
 
-``` json
+```json
 {
     "RESET":0,
     "STOP":1, 
@@ -63,7 +63,7 @@
 
 ###### cnc_emer
 
-``` json
+```json
 {
     "NotEmergency":0,
     "Emergency":1, 
@@ -76,7 +76,7 @@
 
 ###### cnc_gcode
 
-``` json
+```json
 {
     "G01":0,
     "G02":1, 
@@ -93,7 +93,7 @@
 
 ###### cnc_mode
 
-``` json
+```json
 {
     "JOG模式中":0,
     "手轮模式中":1, 
@@ -115,7 +115,7 @@
 ```
 ###### cnc_runstatus
 
-``` json
+```json
 {
     "RESET":0,
     "STOP":1, 
@@ -128,7 +128,7 @@
 
 ###### cnc_emer
 
-``` json
+```json
 {
     "NotEmergency": 0,
     "Emergency": 1
@@ -139,7 +139,7 @@
 
 ###### cnc_mode
 
-``` json
+```json
 {
     "JOG": 0,
     "TEACHIN":1, 
@@ -155,7 +155,7 @@
 
 ###### cnc_runstatus
 
-``` json
+```json
 {
     "RESET":0,
     "STOP":1, 
@@ -171,7 +171,7 @@
 
 ###### cnc_mode
 
-``` json
+```json
 {
     "MANU":0, 
     "MDI":1, 
@@ -184,12 +184,73 @@
 
 ###### cnc_runstatus
 
-``` json
+```json
 {
     "电源关闭":1,
     "等待":2, 
     "工作":3,
     "停止":4, 
     "错误":5,
+}
+```
+
+#### GSK
+##### cnc_mode
+
+```json
+{
+  "复位":1,
+  "急停":2,
+  "运行":3,
+  "暂停":4,
+  "复位返回":5,
+  "报警":6,
+  "信息":7,
+  "后台编辑中":8,
+  "手动保存程序":9
+}
+```
+
+##### cnc_runstatus
+
+```json
+{
+  "录入":0,
+  "自动":1,
+  "编辑":2,
+  "手脉":3,
+  "手动":4,
+  "回零":5,
+  "连接":6
+}
+```
+
+
+#### Syntec
+##### cnc_mode
+
+```json
+{
+  "NULL":0,
+  "EDIT":1,
+  "AUTO":2,
+  "MDI":3,
+  "JOG":4,
+  "INCJOG":5,
+  "MPG":6,
+  "HOME":7
+}
+```
+
+##### cnc_runstatus
+
+```json
+{
+  "NOTREADY":0,
+  "READY":1,
+  "START":2,
+  "FEEDHOLD":3,
+  "STOP":4,
+  "****":5
 }
 ```

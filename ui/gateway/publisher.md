@@ -36,6 +36,7 @@ end
 
 function init_push(devices)
 
+
 end
 ```
 
